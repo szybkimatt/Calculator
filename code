@@ -1,0 +1,63 @@
+
+import java.beans.Expression;
+import java.io.Console;
+import java.util.Scanner;
+
+public class Caluclatormatthewjava{
+
+
+    
+    public static void main(String[] args) {
+        double dbluserinput;
+        int intuserinput;
+        boolean booAddition;
+        boolean booSubtration;
+        boolean booMultiplcation;
+        boolean booDivision;
+        boolean x;
+        boolean y;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("WELCOME \n Subtration(1) \n Addition(2) \n Multiplcation(3) \n Division(4) \n enter the integer input corrisponding to what operation you want to use.");
+    
+        switch(intuserinput) {
+        case 1:
+        booSubtration = true;
+        break;
+        case 2:
+        booAddition = true;
+        break;
+        case 3:
+        booMultiplcation = true;
+        break;
+        case 4:
+        booDivision = true;
+        break;
+        }
+
+        x = scanner.nextFloat();
+
+        if (booAddition = true){
+            System.out.println("input x");
+        }
+        else if (booSubtration = true){
+            System.out.println("input x");
+        }
+        else if (booMultiplcation = true){
+            System.out.println("input x");
+        }
+        else if (booDivision = true){
+            System.out.println("input x");
+        }
+        else{
+            System.out.println("error");
+        }
+
+            
+            
+            
+        
+    } 
+    
+
+}
