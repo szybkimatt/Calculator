@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+public class Caluclatormatthewjava{
+   
+    public double doubleValue(double a, double b) {
+       
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("WELCOME \n Subtraction(1) \n Addition(2) \n Multiplication(3) \n Division(4) \n Enter the integer input corresponding to what operation you want to use. /n Also, to exit it press 'X' ");
+        switch(scan.nextInt()) {
+            case 1:
+                return a - b;
+            case 2:
+                return a + b;
+            case 3:
+                return a * b;
+            case 4:
+                return a / b;
+            default:
+                throw new IllegalArgumentException("Invalid operation");
+
+        }
+    }
+    public static void main(String[] args) {
+        while (true){
+        Scanner scan2 = new Scanner(System.in);
+        System.out.println(("enter first number"));
+        double a = scan2.nextDouble();
+        System.out.println("enter second number");
+        double b = scan2.nextDouble();
+        
+
+        Caluclatormatthewjava calculator = new Caluclatormatthewjava();
+        System.out.println("The result is: " + calculator.doubleValue(a, b));
+        
+        String strscan2 = (scan2.nextLine().toUpperCase());
+        if (strscan2.equals("X")){
+            System.out.println("clear");
+           break;
+          
+        }
+        }  
+    }
+            
+}
